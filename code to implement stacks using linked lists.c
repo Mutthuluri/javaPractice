@@ -1,4 +1,4 @@
-//   code to implement stacks using linked lists                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+//   code to implement stacks using linked lists                     
 #include <stdio.h>
 #include <stdlib.h>
 #define max 3
@@ -26,29 +26,29 @@ int main(){
       break;
       case 2: pop();
       break;
-      case3 : pri();
+      case 3 : pri();
       break;
-      case4 : return 0;
+      case 4 : return 0;
       default: printf("INVALID INPUT");
     }
   }
   return 0;
 }
 void push(){
-  int item;
-  int rollno;
-  if(header=NULL){
+  node* item;
+  //int rollno;
+  if(header == NULL){
     printf("initailizing the object\n");
     header =(node*)malloc(sizeof(node));
     printf("enter the roll number");
-    scanf("%d",&rollno);
+    scanf("%d",&header->rollno);
   }
   else {
     header->next=(node*)malloc(sizeof(node));
     header->next->next = NULL;
     header = header->next;
     printf("enter the item to push");
-    scanf("%d",&item);
+    scanf("%d",&header->rollno);
     //stack_[top]=item;
   }
 }
@@ -56,7 +56,7 @@ void pri(){
   node* ptr = header;
   if(header == NULL)
   {
-      printf("Stact is Empty");
+      printf("Stack is Empty");
   }
   while(ptr != NULL)
   {
