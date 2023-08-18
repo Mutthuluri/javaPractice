@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+ Scanner vv = new Scanner(System.in);
+
+        System.out.print("Enter the student name: ");
+        String name = vv.nextLine();
+
+        System.out.print("Enter the student enrolment number: ");
+        String enrolmentNo = vv.nextLine();
+
+        System.out.print("Enter the student address: ");
+        String address = vv.nextLine();
+
+        System.out.print("Enter the student phone number: ");
+        String phoneNo = vv.nextLine();
+
+        System.out.print("Enter the student division: ");
+        String division = vv.nextLine();
+
+        System.out.println("Student Name: " + name);
+        System.out.println("Student Enrolment Number: " + enrolmentNo);
+        System.out.println("Student Address: " + address);
+        System.out.println("Student Phone Number: " + phoneNo);
+        System.out.println("Student Division: " + division);
+
+    }
+
+}
